@@ -1,0 +1,50 @@
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+body{
+  font-family :Arial, Helvetica, sans-serif;
+}
+.header{
+  width : 100%;
+  background-color : #222;
+}
+.header{
+  display : flex;
+  justify-content : space-between;
+  align-items : center;
+  padding : 15px 40px;
+}
+.hotel_logo{
+  color : white;
+  font-size : 28px;
+  font-weight : bold;
+  white-space : nowrap;
+}
+.navs{
+  list-style : none;
+  display : flex;
+  gap : 25px;
+  flex-wrap : wrap;
+}
+.navs li a{
+  text-decoration : none;
+  color : white;
+  font-size : 16px;
+  transition : 0.3s;
+}
+.navs li a:hover{
+  color : orange;
+}
+@media (max-width : 760px){
+  .header{
+    flex-direction : column;
+    gap : 15px;
+    padding : 15px 20px;
+  }
+  .navs{
+    justify-content : center;
+    gap : 15px;
+  }
+}
