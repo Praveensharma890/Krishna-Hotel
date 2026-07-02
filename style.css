@@ -107,3 +107,130 @@ body{
 .view_menu:hover{
   background-color : rgb(131, 128, 128);
 }
+
+/* about section */
+.about{
+  width : 100%;
+  padding : 5rem 8%;
+  background : #111;
+  color : #fff;
+}
+.top_heading_box{
+  text-align : center;
+  margin-bottom : 4rem;
+}
+.heading{
+  font-size : clamp(2rem,4vw,3rem);
+  color : #d4af37;
+  text-transform : uppercase;
+  letter-spacing : 2px;
+  text-shadow : 0 2px 12px rgba(0,0,0,0.5);
+}
+
+.bottom_part{
+  display : flex;
+  align-items : center;
+  justify-content : space-between;
+  gap : 2rem;
+  flex-wrap : wrap;
+}
+.left_image_cont{
+  flex : 1 1 300px;
+}
+.left_image_cont img{
+  width : 100%;
+  display : block;
+  border-radius : 18px;
+  object-fit : cover;
+  box-shadow : 0 15px 35px rgba(0,0,0,.35);
+  transition : 0.4s ease;
+}
+.left_image_cont image:hover{
+  transform : scale(1.03);
+}
+.right_content_cont{
+  flex : 1 1 300px;
+}
+.right_content_cont p{
+  font-size : 1rem;
+  line-height : 1.8;
+  color : #d6d6d6;
+  margin-bottom : 1rem;
+}
+.end_line{
+  color : #d4af37;
+  font-weight : 600;
+  margin : 1.5rem 0;
+  font-size : 1.05rem;
+}
+.features{
+  list-style : none;
+  display : grid;
+  grid-template-columns : repeat(2,minmax(140px,1fr));
+  gap : 1rem;
+  margin : 2rem 0;
+  padding : 0;
+}
+.features li{
+  display : flex;
+  align-items : center;
+  gap : .7rem;
+  font-size : 1rem;
+  color : #fff;
+}
+.features i{
+  font-size : 1.3rem;
+  color : #d4af37;
+}
+
+.learn_more_btn{
+  display : inline-block;
+  text-decoration : none;
+  background : #d4af37;
+  color : #111;
+  padding : 0.9rem 2rem;
+  border-radius : 40px;
+  font-weight : 600;
+  transition : .35s ease;
+}
+.learn_more_btn:hover{
+  background : #f4c542;
+  transform : translateY(-3px);
+  box-shadow : 0 10px 20px rgba(212,175,55,.35);
+}
+
+@media(max-width : 900px){
+  .about{
+    padding : 4rem 8%;
+  }
+  .bottom_part{
+    flex-direction : column;
+    text-align : center;
+  }
+  .features{
+    grid-template-columns : 1fr 1fr;
+    justify-items : center;
+    /* justify-items : left; */
+  }
+  .left_image_cont{
+    display : flex;
+    justify-content : center;
+  }
+  .left_image_cont img{
+    width : 100%;
+    max-width : 450px;
+  }
+}
+
+@media(max-width : 600px){
+  .about{
+    padding : 4rem 5%;
+  }
+  .features{
+    grid-template-columns: 1fr;
+  }
+  .learn_more_btn{
+    width : 100%;
+    text-align : center;
+  }
+}
