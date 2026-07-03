@@ -58,7 +58,7 @@ body{
   justify-content : center;
   align-items : center;
   text-align : center;
-  background : url("heroimage.jpg");
+  background : url("images/heroimage.jpg");
   background-position : center;
   background-size : cover;
   background-repeat : no-repeat;
