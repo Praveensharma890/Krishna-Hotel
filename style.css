@@ -438,3 +438,164 @@ body{
     height : 180px;
   }
 }
+
+/* Room section */
+.room{
+  width : 100%;
+  padding : 5rem 8%;
+  background : #111;
+  color : #fff;
+  box-sizing : border-box;
+}
+
+
+.top_room_cont{
+  text-align : center;
+  margin-bottom : 3rem;
+}
+.room_title{
+  font-size : clamp(1.8rem,3vw,3rem);
+  color : #d4af37;
+  text-transform : uppercase;
+  letter-spacing : 2px;
+  font-weight : 700;
+}
+.room_title_desc{
+  font-size : clamp(0.9rem, 1.2vw, 1.1rem);
+  color : #ccc;
+  max-width : 750px;
+  margin : 0 auto;
+  line-height : 1.7;
+}
+
+.bottom_room_cont{
+  display : flex;
+  flex-direction : column;
+  gap : 2.5rem;
+}
+
+.room_cont{
+  display : flex;
+  /* gap : 2rem; */
+  background : #1a1a1a;
+  border-radius : 16px;
+  overflow : hidden;
+  box-shadow : 0 10px 25px rgba(0,0,0,0.4);
+  transition : 0.3s ease;
+}
+.room_cont:hover{
+  transform : translateY(-6px);
+}
+
+.room_left_cont{
+  flex : 1;
+  min-width : 300px;
+}
+.room_img{
+  width : 100%;
+  height : 100%;
+  min-height : 300px;
+  object-fit : cover;
+  display : block;
+  transition : transform 0.4s ease;
+}
+.room_cont:hover .room_img1{
+    transform : scale(1.05);
+}
+.room_right_cont{
+  flex : 1.5;
+  padding : 1.8rem;
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+}
+.room_name{
+  font-size : 1.8rem;
+  margin-bottom : 0.4rem;
+  color : #fff;
+}
+.room_rating{
+  color : #d4af37;
+  margin-bottom : 0.8rem;
+  font-size :1rem;
+}
+.room_rating i{
+  margin-right : 3px;
+}
+
+.room_dec{
+  font-size : 0.95rem;
+  color : #ccc;
+  line-height : 1.6;
+  margin-bottom : 1rem;
+}
+.room_facilities{
+   list-style : none;
+   padding : 0;
+   margin :0 0 1.2rem 0;
+}
+
+.room_facilities li{
+  padding : 0.5rem;
+  display : flex;
+  gap : 1rem;
+  color : #ddd;
+}
+.room_facilities i{
+   color : #d4af37;
+  font-size : 1rem;
+}
+
+.room_price{
+  font-size : 1.4rem;
+  color : #d4af37;
+  font-weight : bold;
+  margin-bottom : 1.2rem;
+}
+
+.room_booknow_btn{
+  display : inline-block;
+  width : fit-content;
+  padding : 0.75rem 1.6rem;
+  background : #d4af37;
+  color : #111;
+  border-radius : 30px;
+  text-decoration : none;
+  font-weight : 600;
+  transition : 0.3s ease;
+}
+.room_booknow_btn:hover{
+  background : #f4c542;
+  transform : translateY(-3px);
+}
+
+@media(max-width : 900px){
+  .room_cont{
+    flex-direction : column;
+  }
+  .room_left_cont{
+    width : 100%;
+  }
+  .room_img{
+    height : 250px;
+    min-height : unset;
+  }
+  .room_night_cont{
+    padding : 1.3rem;
+  }
+}
+
+@media (max-width : 500px){
+  .room{
+    padding : 4rem 5%;
+  }
+  .room_name{
+    font-size : 1.3rem;
+  }
+  .room_price{
+    font-size : 1.1rem;
+  }
+  .room_dec{
+    font-size : 0.9rem;
+  }
+}
