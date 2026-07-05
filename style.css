@@ -599,3 +599,178 @@ body{
     font-size : 0.9rem;
   }
 }
+
+/* contact section */
+.contact{
+  width : 100%;
+  padding : 5rem 8%;
+  background : #111;
+  color : #fff;
+  box-sizing : border-box;
+}
+
+.contact_top_cont{
+  text-align : center;
+  margin-bottom : 3rem;
+}
+.contact_title{
+  font-size : clamp(1.8rem,3vw,3rem);
+  color : #d4af37;
+  text-transform : uppercase;
+  letter-spacing : 2px;
+}
+.contact_para{
+  margin-top : 0.8rem;
+  font-size : clamp(0.95rem,1.2vw,1.1rem);
+  color : #ccc;
+  line-height : 1.7;
+}
+
+.contact_bottom_cont{
+   display : flex;
+   gap : 2.5rem;
+   align-items : stretch;
+}
+.contact_left_cont{
+  flex : 1;
+  background : #1a1a1a;
+  border-radius : 16px;
+  padding : 2rem;
+  box-shadow : 0 10px 25px rgba(0,0,0,0.35);
+}
+.hotel_address_info{
+  list-style : none;
+  padding : 0;
+  margin : 0;
+  display : flex;
+  flex-direction : column;
+  gap : 1.5rem;
+}
+.hotel_address_info li{
+  display : flex;
+  align-items : flex-start;
+  gap : 14px;
+  color : #ddd;
+  font-size : 1rem;
+  line-height : 1.7;
+}
+.info_icon{
+  color : #d4af37;
+  font-size : 1.25rem;
+  flex-shrink : 0;
+}
+
+.social_media{
+   display : flex !important;
+   align-items : center;
+   flex-wrap : wrap;
+   gap : 15px;
+   margin-top : .5rem;
+}
+.social_media a{
+  text-decoration : none;
+  color : #fff;
+  font-size : 1.5rem;
+  display : inline-flex;
+  align-items : center;
+  justify-content : center;
+  transition : .3s ease;
+}
+.social_media a:hover{
+  color : #d4af37;
+  transform : translateY(-3px);
+}
+
+.contact_right_cont{
+  flex : 1.2;
+  background : #1a1a1a;
+  border-radius : 16px;
+  padding : 2rem;
+  box-shadow : 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.contact_form_heading{
+  text-align : center;
+  color : #f4af37;
+  font-size : 1.8rem;
+  margin-bottom : 1.8rem;
+}
+.contact_form{
+  display : flex;
+ flex-direction : column;
+ gap : 1rem;
+}
+.contact_form label{
+  color : #fff;
+  font-size : .95rem;
+  font-weight : 500;
+}
+.contact_form input,.contact_form textarea{
+  width : 100%;
+  padding : .9rem 1rem;
+  border : none;
+  outline : none;
+  border-radius : 10px;
+  background : #2b2b2b;
+  color : #fff;
+  font-size : .95rem;
+  resize : vertical;
+  transition : .3s;
+}
+.contact_fonm input::placeholder,.contact_form textarea::placeholder{
+  color : #999;
+}
+.contact_form input:focus,.contact_form textarea:focus {
+  border : 1px solid #d4af37;
+  box-shadow : 0 0 10px rgba(212,175,55,.25);
+} 
+.contact_form textarea{
+  min-height : 140px;
+}
+.send_msg_btn{
+  width : fit-content;
+  padding : .8rem 2rem;
+  border : none;
+  border-radius : 30px;
+  background : #d4af37;
+  color : #111;
+  font-size : 1rem;
+  font-weight : 600;
+  cursor : pointer;
+  transition : 0.3s ease;
+}
+.send_msg_btn:hover{
+  background : #f4c542;
+  transform : translateY(-3px);
+  box-shadow : 0 8px 20px rgba(212,175,55,.35);
+}
+
+@media (max-width : 900px){
+  .contact{
+    padding : 4rem 6%;
+  }
+  .contact_bottom_cont{
+    flex-direction : column;
+  }
+  .contact_left_cont,.contact_right_cont{
+    width : 100%;
+  }
+}
+
+@media (max-width : 600px){
+  .contact{
+    padding : 4rem 5%;
+  }
+  .contact_left_cont,.contact_right_cont{
+    padding : 1.5rem;
+  }
+  .contact_form_heading{
+    font-size : 1.5rem;
+  }
+  .hotel_address_info li{
+    font-size : .92rem;
+  }
+  .send_msg_btn{
+    width : 100%;
+  }
+}
