@@ -774,3 +774,75 @@ body{
     width : 100%;
   }
 }
+
+/* footer */
+.footer{
+  width : 100%;
+  background : #0d0d0d;
+  color : #fff;
+  text-align : center;
+  padding : 2.5rem 8%;
+  border-top : 2px solid #d4af37;
+}
+
+.foot_title{
+  font-size : clamp(1.6rem, 3vw, 2.3rem);
+  color : #d4af37;
+  text-transform : uppercase;
+  letter-spacing : 2px;
+}
+
+.copy_right_msg_cont{
+  display : flex;
+  flex-direction : column;
+  gap : 0.5rem;
+  margin-bottom : 1.2rem;
+}
+.copyright_msg,.msg_two,.foot_msg{
+  font-size : clamp(0.9rem, 1.2vw, 1rem);
+  color : #ccc;
+  line-height : 1.7;
+}
+.msg_two a{
+  color : #d4af37;
+  text-decoration : none;
+  transition : all 0.3s ease;
+}
+.msg_two a:hover{
+  color : #f4c542;
+  text-decoration : underline;
+}
+.msg_two a:visited{
+  color : #d4af37;
+}
+.msg_two a:focus{
+  outline : 2px solid #d4af37;
+  outline-offset : 3px;
+  border-radius : 3px;
+}
+.foot_msg{
+  color : #f4c542;
+  font-weight : 500;
+}
+.foot_msg:hover{
+  color : #f4cf37;
+  transition : 0.3s ease;
+}
+
+@media (max-width : 760px){
+  .footer{
+    padding : 2rem 5%;
+  }
+  .foot_title{
+    margin-bottom : 0.8rem;
+  }
+  .copy_right_msg_cont{
+    gap : 0.4rem;
+  }
+}
+
+@media (max-width : 480px){
+  .footer{
+    padding : 1.8rem 1rem;
+  }
+}
