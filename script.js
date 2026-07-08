@@ -32,3 +32,27 @@ window.addEventListener("scroll", (evt) => {
     }
   });
 });
+
+// menu filter
+const filterButtons = document.querySelectorAll(".food_option a");
+const menuCards = document.querySelectorAll(".menu_card");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    filterButtons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    this.classList.add("active");
+
+    const filter = this.dataset.filter;
+    menuCards.forEach((card) => {
+      if (filter === "all" || card.classList.contains(filter)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
