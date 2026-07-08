@@ -9,6 +9,8 @@ body{
 .header{
   width : 100%;
   background-color : #0d0d0d;
+  position : fixed;
+  z-index : 1;
 }
 .header{
   display : flex;
@@ -28,7 +30,7 @@ body{
   gap : 25px;
   flex-wrap : wrap;
 }
-.navs li a{
+.link{
   text-decoration : none;
   color : white;
   font-size : 16px;
@@ -847,4 +849,8 @@ body{
   .footer{
     padding : 1.8rem 1rem;
   }
+}
+
+.open{
+   color : orange;
 }
