@@ -1,7 +1,17 @@
 const sections = document.querySelectorAll(".section");
 const navs = document.querySelectorAll(".link");
+const header = document.querySelector(".header");
 
 window.addEventListener("scroll", (evt) => {
+  //  for box shadow
+  if (window.scrollY > 480) {
+    console.log(window.scrollY);
+    header.classList.add("header-shadow");
+  } else {
+    header.classList.remove("header-shadow");
+  }
+
+  // for nav links highlight
   let current = "";
 
   sections.forEach((section) => {
