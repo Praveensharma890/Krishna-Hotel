@@ -1,0 +1,126 @@
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+body{
+  font-family : Arial, Helvetica, sans-serif;
+   background-color : #111;
+   color : #fff;
+   line-height : 1.6;
+}
+.header{
+  width : 100%;
+  padding : 2.5rem 8% 1.5rem;
+  text-align : center;
+}
+.header_title{
+  font-size : clamp(2rem, 4vw, 3rem);
+  color : #d4af37;
+  margin-bottom : 0.6rem;
+}
+.header_desc{
+  width : min(650px,100%);
+  margin : auto;
+  color : #ccc;
+  font-size : clamp(0.95rem, 1.5vw, 1.05rem);
+}
+.booking_section{
+  width : 100%;
+  padding : 2rem 8% 5rem;
+  display : flex;
+  justify-content : center;
+}
+.booking_form{
+  width : 100%;
+  max-width : 650px;
+  background : #1a1a1a;
+  padding : 3rem;
+  border-radius : 15px;
+  box-shadow : 0 10px 30px rgba(0,0,0,.4);
+}
+.legend_title{
+  text-align : center;
+  color : #d4af37;
+  font-size : clamp(1.5rem,3vw,2rem);
+  margin-bottom : 2rem;
+}
+.booking_form label{
+  display : block;
+  margin-bottom : .4rem;
+  margin-top : 1rem;
+  font-weight : 600;
+}
+.booking_form input,.booking_form select,.booking_form textarea{
+  width : 100%;
+  padding : .9rem 1rem;
+  border : none;
+  outline : none;
+  border-radius : 8px;
+  background : #2a2a2a;
+  color : #fff;
+  font-size : 1rem;
+}
+.booking_form textarea{
+  resize : vertical;
+  min-height : 120oxl
+}
+.booking_form input:focus,.booking_form select:focus,.booking_form textarea:focus{
+  border : 2px solid #d4af37;
+}
+
+.confirm_btn{
+  width : 100%;
+  margin-top : 2rem;
+  padding : 1rem;
+  border : none;
+  border-radius : 30px;
+  background : #d4af37;
+  color : #111;
+  font-size : 1rem;
+  font-weight : bold;
+  cursor : pointer;
+  transition : 0.3s ease;
+}
+.confirm_btn:hover{
+  background : #f5c84c;
+  transform : translateY(-3px);
+}
+
+.footer{
+  text-align : center;
+  padding : 2.5rem 8%;
+  background : #0b0b0b;
+}
+.foot_title{
+  color : #d4af37;
+  margin-bottom : .8rem;
+}
+.foot_copyright,.foot_msg{
+  color : #aaa;
+  font-size : .95rem;
+}
+
+@media (max-width : 768px){
+  .header{
+    padding : 4rem 5%;
+  }
+  .booking_form{
+    padding : 2rem;
+  }
+  .booking_form{
+    padding : 1.5rem;
+  }
+}
+
+@media (max-width : 480px){
+  .header_title{
+    font-size : 2rem;
+  }
+  .booking_from{
+    padding : 1rem;
+  }
+  .confirm_btn{
+    padding : .9rem;
+  }
+}
