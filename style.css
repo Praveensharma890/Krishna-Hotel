@@ -93,18 +93,19 @@ body{
   border : none;
   cursor : pointer;
   border-radius : 5px;
-  font-size : clamp(0.7rem,3vw,1rem);
-  font-weight : 500;
+  transition : 0.3s ease;
 }
 .book_now{
   background : orange;
-  color : #111;
-  transition : 0.3s ease;
 }
 .view_menu{
   background : white;
-  color : black;
-  transition : 0.3s ease;
+}
+.hero_buttons button a{
+  text-decoration : none;
+ font-size : clamp(0.7rem,3vw,1rem);
+ font-weight : 500;
+ color : #111;
 }
 .book_now:hover{
   background-color : rgb(126, 99, 48);
